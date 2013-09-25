@@ -31,17 +31,32 @@ if [ -e "hosts.conf" ] && [ -e "regras.conf" ];then
 	if [ "$1" == "aplicar" ];then
 		# Aplica as regras nos hosts remotos
 		for estacao in `cat hosts.conf` ; do
+                        if [ "$estacao" == "localhost" ];then
+			echo -n "Aplicando regra no host $estacao:.."
+			cat regras.conf | iptables-restore -c
+			echo "  ok"
+				
+			else
 			echo -n "Aplicando regra no host $estacao:.."
 			cat regras.conf | ssh $usuario@$estacao "iptables-restore -c"
 			echo "  ok"
+			fi
 		done
 	else
 		if [ "$1" == "remover" ];then
 			# Caso de remocao das regras
 			for estacao in `cat hosts.conf` ; do
+                        if [ "$estacao" == "localhost" ];then
+				echo -n "Removendo regras no host $estacao:.."
+				iptables --flush
+				echo "  ok"
+			
+			else
 				echo -n "Removendo regras no host $estacao:.."
 				ssh $usuario@$estacao "iptables --flush "
 				echo "  ok"
+			fi
+
 			done
 		else
 	       		echo "Utilize as opcoes aplicar|remover"
