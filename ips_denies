@@ -1,0 +1,24 @@
+#Rede Interna
+Allow From 192.168
+
+#Blocos Brasil
+Allow from 139.82
+Allow from 143.106 143.107 143.108 143.54 146.134
+Allow from 146.164
+Allow from 147.65
+Allow from 150.161 150.162 150.163 150.164 150.165 152.84 152.92 155.211 157.86
+Allow from 161.148 161.24 161.79 164.41 164.85
+Allow from 170.66
+Allow From 177
+Allow From 186
+Allow From 187
+Allow From 189
+Allow From 200
+Allow From 201
+
+#Amazon
+Allow From 107.20.0.0/14
+
+#Google
+Allow From 66.54
+Allow From 66.249
