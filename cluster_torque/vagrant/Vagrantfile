@@ -18,10 +18,10 @@ Vagrant.configure("2") do |config|
     vb.customize ['modifyvm', :id, '--cpuexecutioncap', 90]
   end
 
-  config.vm.define :fe do |fe|
-    fe.vm.hostname = 'fe'
-    fe.vm.network :private_network, ip: rede_mpi+'.1'
-    fe.vm.network :private_network, ip: rede_nfs+'.1'
+  config.vm.define :ada do |ada|
+    ada.vm.hostname = 'ada'
+    ada.vm.network :private_network, ip: rede_mpi+'.1'
+    ada.vm.network :private_network, ip: rede_nfs+'.1'
   end
 
 end
