@@ -5,31 +5,60 @@ package { 'atftpd':
   ensure => installed,
 }
 
+service { 'rlinetd':
+  name      => rlinetd,
+  ensure    => stopped,
+  enable    => false,
+}
+
 service { 'atftpd':
   name      => atftpd,
   ensure    => running,
   enable    => true,
-  subscribe => File['dhcpd.conf'],
+  subscribe => Service['rlinetd'],
 }
 
-file { 'sysconfig_atftpd':
+file { 'atftpd':
   path    => '/etc/default/atftpd',
   ensure  => file,
-  require => Package['atftpd'],
-  source  => "/tmp/vagrant-puppet/manifests/files/sysconfig_atftpd",
+  source  => "puppet:///manifests/files/sysconfig_atftpd",
+}
+
+file { "/tftpboot":
+    ensure => "directory",
+    owner  => "nobody",
+    group  => "nogroup",
+    mode   => 777,
 }
 
 file { "/tftpboot/pxelinux.cfg":
     ensure => "directory",
     owner  => "nobody",
-    group  => "nobody",
+    group  => "nogroup",
+    mode   => 777,
+}
+
+file { "/tftpboot/nodes":
+    ensure => "directory",
+    owner  => "nobody",
+    group  => "nogroup",
     mode   => 777,
 }
 
 file { 'default':
   path    => '/tftpboot/pxelinux.cfg/default',
   ensure  => file,
-  source  => "/tmp/vagrant-puppet/manifests/files/pxelinux.cfg_default",
+  source  => "puppet:///manifests/files/pxelinux.cfg_default",
 }
+
+file { 'pxelinux.0':
+  path    => '/tftpboot/pxelinux.0',
+  ensure  => file,
+  source  => "puppet:///manifests/files/pxelinux.0",
+}
+
+
+
+
 
 }
