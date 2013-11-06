@@ -3,12 +3,13 @@ Vagrant.configure("2") do |config|
    projeto = 'cluster_torque'
    rede_externa =
    rede_mpi = '192.168.1'
-   rede_nfs = '10.0.0'
+   rede_nfs = '10.1.0'
 
   # Integracao Puppet 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "../puppet/manifests"
     puppet.manifest_file = "cluster.pp"
+    puppet.module_path = "../puppet/modules"
   end
 
   config.vm.provider :virtualbox do |vb|
@@ -20,8 +21,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :ada do |ada|
     ada.vm.hostname = 'ada'
-    ada.vm.network :private_network, ip: rede_mpi+'.1'
-    ada.vm.network :private_network, ip: rede_nfs+'.1'
+    ada.vm.network :private_network, ip: rede_mpi+'.254'
+    ada.vm.network :private_network, ip: rede_nfs+'.254'
   end
 
 end
