@@ -5,24 +5,25 @@ package { 'isc-dhcp-server':
 }
 
 service { 'isc-dhcp-server':
-  name      => $service_name,
+  name      => isc-dhcp-server,
   ensure    => running,
   enable    => true,
   subscribe => File['dhcpd.conf'],
+  require  => Exec['apt-get update'],
 }
 
 file { 'dhcpd.conf':
   path    => '/etc/dhcp/dhcpd.conf',
   ensure  => file,
   require => Package['isc-dhcp-server'],
-  source  => "puppet:///manifests/files/dhcpd.conf",
+  source  => "puppet:///files/dhcpd.conf",
 }
 
 file { 'hosts.conf':
   path    => '/etc/dhcp/hosts.conf',
   ensure  => file,
   require => Package['isc-dhcp-server'],
-  source  => "puppet:///manifests/files/hosts.conf",
+  source  => "puppet:///files/hosts.conf",
 }
 
 }
