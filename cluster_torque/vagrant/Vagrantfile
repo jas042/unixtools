@@ -5,12 +5,13 @@ Vagrant.configure("2") do |config|
    rede_mpi = '192.168.1'
    rede_nfs = '10.1.0'
 
+ 
   # Integracao Puppet 
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "../puppet/manifests"
     puppet.manifest_file = "cluster.pp"
     puppet.module_path = "../puppet/modules"
-    options = "--fileserverconfig=/vagrant/fileserver.conf"
+    puppet.options << '--fileserverconfig /tmp/vagrant/fileserver.conf'
   end
 
   config.vm.provider :virtualbox do |vb|

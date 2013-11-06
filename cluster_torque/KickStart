@@ -1,2 +1,2 @@
 1 - Instalacao basica do Debian
-2 - Configuracao das interface de Rede
+2 - Configuracao das interface de Rede: Garantir que a interface de rede eth0 seja a interface externa

@@ -14,7 +14,7 @@ file { 'ntp.conf':
   path    => '/etc/ntp.conf',
   ensure  => file,
   require => Package['ntp'],
-  source  => "puppet:///files/ntp.conf",
+  source  => "/tmp/vagrant-puppet/manifests/files/ntp.conf",
 }
 
 }

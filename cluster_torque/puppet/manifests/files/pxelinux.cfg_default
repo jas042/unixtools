@@ -1,0 +1,8 @@
+       # Default boot option to use
+       DEFAULT debian
+       # Prompt user for selection
+       PROMPT 0
+       LABEL debian
+         MENU LABEL Debian Squeeze
+         KERNEL nodes/vmlinuz
+         APPEND initrd=nodes/initrd
