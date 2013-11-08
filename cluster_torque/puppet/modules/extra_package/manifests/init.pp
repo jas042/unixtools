@@ -1,10 +1,10 @@
 class extra_package {
    notify { "Instalando pacotes DEB": }
 
-   file { 'source.list':
-     path    => '/etc/apt/source.list',
+   file { 'sources.list':
+     path    => '/etc/apt/sources.list',
      ensure  => file,
-     source  => "puppet:///manifests/files/source.list",
+     source  => "puppet:///modules/extra_package/sources.list",
    }
 
    exec { "apt-get update":

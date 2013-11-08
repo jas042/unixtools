@@ -1,6 +1,9 @@
-node ada2.if.ufrgs.br {
-
+include dhcp
 include extra_package
-
-
-}
+include ntp	
+include pxe	
+#include maiu  
+#include openiscsi  
+#include slurm  
+#include torque  
+#include user

@@ -14,7 +14,7 @@ file { 'ntp.conf':
   path    => '/etc/ntp.conf',
   ensure  => file,
   require => Package['ntp'],
-  source  => "puppet:///manifests/files/ntp.conf",
+  source  => "puppet:///modules/ntp/ntp.conf",
 }
 
 }

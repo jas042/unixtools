@@ -2,7 +2,7 @@ class dhcp {
 
 package { 'isc-dhcp-server':
   ensure => installed,
-  require  => Exec['apt-get update'],
+#  require  => Exec['apt-get update'],
 }
 
 service { 'isc-dhcp-server':
@@ -16,7 +16,7 @@ file { 'dhcpd.conf':
   path    => '/etc/dhcp/dhcpd.conf',
   ensure  => file,
   require => Package['isc-dhcp-server'],
-  source  => "puppet:///manifests/files/dhcpd.conf",
+  source  => "puppet:///modules/dhcp/dhcpd.conf",
   subscribe => File['hosts.conf'],
 }
 
@@ -24,14 +24,14 @@ file { 'hosts.conf':
   path    => '/etc/dhcp/hosts.conf',
   ensure  => file,
   require => Package['isc-dhcp-server'],
-  source  => "puppet:///manifests/files/hosts.conf",
+  source  => "puppet:///modules/dhcp/hosts.conf",
 }
 
 file { 'sysconfig_dhcp':
   path    => '/etc/default/isc-dhcp-server',
   ensure  => file,
   require => Package['isc-dhcp-server'],
-  source  => "puppet:///manifests/files/sysconfig_dhcp",
+  source  => "puppet:///modules/dhcp/sysconfig_dhcp",
 }
 
 }

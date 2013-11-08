@@ -5,23 +5,20 @@ package { 'atftpd':
   ensure => installed,
 }
 
-service { 'rlinetd':
-  name      => rlinetd,
-  ensure    => stopped,
-  enable    => false,
+package { 'rlinetd':
+  ensure => purged,
 }
 
 service { 'atftpd':
   name      => atftpd,
   ensure    => running,
   enable    => true,
-  subscribe => Service['rlinetd'],
 }
 
 file { 'atftpd':
   path    => '/etc/default/atftpd',
   ensure  => file,
-  source  => "puppet:///manifests/files/sysconfig_atftpd",
+  source  => "puppet:///modules/pxe/sysconfig_atftpd",
 }
 
 file { "/tftpboot":
@@ -48,17 +45,14 @@ file { "/tftpboot/nodes":
 file { 'default':
   path    => '/tftpboot/pxelinux.cfg/default',
   ensure  => file,
-  source  => "puppet:///manifests/files/pxelinux.cfg_default",
+  source  => "puppet:///modules/pxe/pxelinux.cfg_default",
 }
 
 file { 'pxelinux.0':
   path    => '/tftpboot/pxelinux.0',
   ensure  => file,
-  source  => "puppet:///manifests/files/pxelinux.0",
+  source  => "puppet:///modules/pxe/pxelinux.0",
 }
-
-
-
 
 
 }
