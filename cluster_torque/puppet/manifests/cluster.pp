@@ -1,5 +1,6 @@
+node ada2.if.ufrgs.br {
+
 include extra_package
-include user
-include dhcp
-include pxe
-include ntp
+
+
+}
