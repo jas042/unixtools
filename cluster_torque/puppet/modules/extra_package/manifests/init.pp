@@ -5,10 +5,12 @@ class extra_package {
      path    => '/etc/apt/sources.list',
      ensure  => file,
      source  => "puppet:///modules/extra_package/sources.list",
+     notify  => Exec["apt-get update"],
    }
 
    exec { "apt-get update":
      command => "/usr/bin/apt-get update",
+     require => File['sources.list'],
    }
 
    package { 'libxml2-dev': 
