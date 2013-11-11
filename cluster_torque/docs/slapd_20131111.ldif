@@ -1,0 +1,1753 @@
+dn: dc=ada
+dc: ada
+objectClass: dcObject
+objectClass: organization
+o: Instituto de Fisica - UFRGS
+
+dn: ou=usuarios, dc=ada
+ou: usuarios
+objectClass: top
+objectClass: organizationalUnit
+
+dn: uid=jas,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTUwN1o4dnIzcmJBaVE=
+loginShell: /bin/bash
+uidNumber: 500
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: jas
+gecos: James de Assis Silva
+cn: jas
+homeDirectory: /home/jas
+
+dn: uid=leon,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fWJJL0VhMThNN3JXZkk=
+loginShell: /bin/bash
+uidNumber: 501
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: leon
+gecos: Leonardo Gregory Brunnet
+cn: leon
+homeDirectory: /home/leon
+
+dn: uid=skoliveira,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9ZHR1ZElvQUZMeE94MUJTTXRVOWVXR1JBWE5ITmtnOVk=
+loginShell: /bin/bash
+uidNumber: 503
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: skoliveira
+gecos: Samuel Oliveira
+cn: skoliveira
+homeDirectory: /home/skoliveira
+
+dn: uid=melo,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTJoemZPRlhMWHIyVC4=
+loginShell: /bin/bash
+uidNumber: 504
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: melo
+gecos: Ricardo Melo Ferreira, 129442, M203
+cn: melo
+homeDirectory: /home/melo
+
+dn: uid=rizzato,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9TW9Hc3VYeXVOWjh2UUs1QnJxa1E5bGt4UmFyRHhreVc=
+loginShell: /bin/bash
+uidNumber: 505
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rizzato
+gecos: Felipe Barbedo Rizzato, Prof, N211
+cn: rizzato
+homeDirectory: /home/rizzato
+
+dn: uid=magusmao,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUYxNEFlL3JMUjVJNWs=
+loginShell: /bin/bash
+uidNumber: 506
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: magusmao
+gecos: Miguel Gusmao, Prof, N213
+cn: magusmao
+homeDirectory: /home/magusmao
+
+dn: uid=esalcedo,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTBDQ2NNMTVrc1BlQXc=
+loginShell: /bin/bash
+uidNumber: 507
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: esalcedo
+gecos: Evy Augusto Salcedo Torres
+cn: esalcedo
+homeDirectory: /home/esalcedo
+
+dn: uid=arenzon,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9OWpTMTR4K0RkUHdLUmRCeC9EYTdySFEwOWhxdzRlNks=
+loginShell: /bin/bash
+uidNumber: 508
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: arenzon
+gecos: Jeferson Jacob Arenzon
+cn: arenzon
+homeDirectory: /home/arenzon
+
+dn: uid=caca,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTVGUzNGSmRndXEyQWs=
+loginShell: /bin/bash
+uidNumber: 509
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: caca
+gecos: Carolina Brito
+cn: caca
+homeDirectory: /home/caca
+
+dn: uid=barbosa,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTYxeUp1U0NPNzJTYVE=
+loginShell: /bin/bash
+uidNumber: 510
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: barbosa
+gecos: Marcia C Barbosa
+cn: barbosa
+homeDirectory: /home/barbosa
+
+dn: uid=idiart,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9UEkzT3hDRnhQK2RpWHk2NmozZEZqNHNvNDROK2FUQ3c=
+loginShell: /bin/bash
+uidNumber: 511
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: idiart
+gecos: Marco Aurelio Idiart
+cn: idiart
+homeDirectory: /home/idiart
+
+dn: uid=glt,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUxLSHFPOFhtMm1WOVk=
+loginShell: /bin/bash
+uidNumber: 512
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: glt
+gecos: Gilberto Lima Tomas
+cn: glt
+homeDirectory: /home/glt
+
+dn: uid=tmarcelo,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9YnBhY1VjMXJUVFR3c2hNREtMcjZ3WDRHQjZZNm1TVi8=
+loginShell: /bin/bash
+uidNumber: 513
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: tmarcelo
+gecos: T Marcelo
+cn: tmarcelo
+homeDirectory: /home/tmarcelo
+
+dn: uid=oliveira,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9bmNzK3JwRVhqZGZzR2pTMmNpNkJIMlRQK3p4Rlh0MC8=
+loginShell: /bin/bash
+uidNumber: 514
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: oliveira
+gecos: Alan Barros de Oliveira
+cn: oliveira
+homeDirectory: /home/oliveira
+
+dn: uid=ziebell,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVV3UUNNdHMzbkY4eVU=
+loginShell: /bin/bash
+uidNumber: 515
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: ziebell
+gecos: Luis Fernando Ziebell
+cn: ziebell
+homeDirectory: /home/ziebell
+
+dn: uid=rubem,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fS5VQ0pZc01SbzZld00=
+loginShell: /bin/bash
+uidNumber: 516
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rubem
+gecos: Rubem Erichsen Junior
+cn: rubem
+homeDirectory: /home/rubem
+
+dn: uid=julio,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9YTlHUG94VTBzdEdIK3hidzVyRzNVcW1rdXY4WUhhREU=
+loginShell: /bin/bash
+uidNumber: 517
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: julio
+gecos: Julio
+cn: julio
+homeDirectory: /home/julio
+
+dn: uid=srisau,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9ZGdnS0RXcXlEUERjSjY4RkVVKzVra1RPOFhBM0xyZ3Q=
+loginShell: /bin/bash
+uidNumber: 518
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: srisau
+gecos: srisau
+cn: srisau
+homeDirectory: /home/srisau
+
+dn: uid=matemich,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9UUovVDhlSlVUNU56cEtrUUc4em55VllFbTEvaSthLys=
+loginShell: /bin/bash
+uidNumber: 519
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: matemich
+gecos: matemich
+cn: matemich
+homeDirectory: /home/matemich
+
+dn: uid=nicolao,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fS5yL3FVZE50WjlYZ28=
+loginShell: /bin/bash
+uidNumber: 520
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: nicolao
+gecos: Lucas Nicolao
+cn: nicolao
+homeDirectory: /home/nicolao
+
+dn: uid=linelb,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9MzVLL2p4YmQzbE41eUdubkRjM09Id2ZLV2tjaVF5U0k=
+loginShell: /bin/bash
+uidNumber: 521
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: linelb
+gecos: Aline Lopes Balladares
+cn: linelb
+homeDirectory: /home/linelb
+
+dn: uid=joqa,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9MDM0QkV4RkMxK2tXdDJPRGpJMmREZ0lrNFFmdHNOcFI=
+loginShell: /bin/bash
+uidNumber: 522
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: joqa
+gecos: Joacir
+cn: joqa
+homeDirectory: /home/joqa
+
+dn: uid=adriana,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9em1CeU1oSGtNL3BzRU51VjB3RHRMYzU1MDRyTmlXaWQ=
+loginShell: /bin/bash
+uidNumber: 523
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: adriana
+gecos: Adriana
+cn: adriana
+homeDirectory: /home/adriana
+
+dn: uid=diehl,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9dE5RdjBOQlBBWHJtSmZIOVlUL3dKNmdtbjJ2djBOcjg=
+loginShell: /bin/bash
+uidNumber: 524
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: diehl
+gecos: Alexandre Diehl
+cn: diehl
+homeDirectory: /home/diehl
+
+dn: uid=henrique,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9VGpWS1hya2dXM09kN2pJY1V6OTRId092c1UxNTBkNE8=
+loginShell: /bin/bash
+uidNumber: 525
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: henrique
+gecos: Henrique Marks
+cn: henrique
+homeDirectory: /home/henrique
+
+dn: uid=colla,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9N1RQUjZlWTVuc1QwenpBOHRaN3pWMVpBU1VCb1VwbDk=
+loginShell: /bin/bash
+uidNumber: 526
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: colla
+gecos: Thiago Escobar Colla
+cn: colla
+homeDirectory: /home/colla
+
+dn: uid=rita,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9Z1A0S01vZjNIVTNJMzRUNnB0SEZFZHovNlBSclM3em4=
+loginShell: /bin/bash
+uidNumber: 527
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rita
+gecos: Rita Maria Cunha de Almeida
+cn: rita
+homeDirectory: /home/rita
+
+dn: uid=heitor,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fWI1SEQ2Yml0c0luNWM=
+loginShell: /bin/bash
+uidNumber: 528
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: heitor
+gecos: Heitor Carpes Marques Fernandes
+cn: heitor
+homeDirectory: /home/heitor
+
+dn: uid=calovi,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTdrdnl0R0JlZ2NSc1E=
+loginShell: /bin/bash
+uidNumber: 529
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: calovi
+gecos: Daniel Calovi
+cn: calovi
+homeDirectory: /home/calovi
+
+dn: uid=raul,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9dE9vK2tnb3QyQVpxaG0wTndzSllGZUNpSEk2UG16akI=
+loginShell: /bin/bash
+uidNumber: 530
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: raul
+gecos: Raul Carlos Fadanelli Filho
+cn: raul
+homeDirectory: /home/raul
+
+dn: uid=gio,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9ZWQvUi9VYnl2dVpJVTNlRElZendVd1RrcmNRWUhGRVg=
+loginShell: /bin/bash
+uidNumber: 531
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: gio
+gecos: Glaucius Iahnke de Oliveira
+cn: gio
+homeDirectory: /home/gio
+
+dn: uid=aluisio,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9UDhxeGZJOGVkMzU3UHZvaTF4cnh1U0c0K0I1Z3djZDM=
+loginShell: /bin/bash
+uidNumber: 532
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: aluisio
+gecos: Aluisio de Andrade
+cn: aluisio
+homeDirectory: /home/aluisio
+
+dn: uid=wsjr,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fXZtQ3Q0TUV5MlRFSWM=
+loginShell: /bin/bash
+uidNumber: 533
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: wsjr
+gecos: Wilson Simeoni Jr
+cn: wsjr
+homeDirectory: /home/wsjr
+
+dn: uid=pakter,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9KzJ1LzIwMTN0SllCak8rREVUQ3loQlBpckF5aFRwaTY=
+loginShell: /bin/bash
+uidNumber: 534
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: pakter
+gecos: Renato Pakter
+cn: pakter
+homeDirectory: /home/pakter
+
+dn: uid=cbonatto,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9Z2F1a1NyRDJjM25FcjA5Z1dZWUVPNG1zSXNYQUhOYXY=
+loginShell: /bin/bash
+uidNumber: 535
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: cbonatto
+gecos: C Bonatto
+cn: cbonatto
+homeDirectory: /home/cbonatto
+
+dn: uid=agderivi,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9SURuMFRiVnVmdEJ4RkZFZnRuNSt5encyUU5vV2V2TWs=
+loginShell: /bin/bash
+uidNumber: 536
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: agderivi
+gecos: Alexandre Derivi
+cn: agderivi
+homeDirectory: /home/agderivi
+
+dn: uid=mpinto,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9VXNuZ0NWcGJmMzBRckErYUI1dkkwaGNIZXkwNUtsSjQ=
+loginShell: /bin/bash
+uidNumber: 537
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: mpinto
+gecos: Mauricio Pinto
+cn: mpinto
+homeDirectory: /home/mpinto
+
+dn: uid=abonatto,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9MzBaVGpPcGw1eU8vUjM2UzdnbmV2Q1M3WlJ6S3BQZEg=
+loginShell: /bin/bash
+uidNumber: 538
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: abonatto
+gecos: Alexandre Bonatto
+cn: abonatto
+homeDirectory: /home/abonatto
+
+dn: uid=sebas,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9WHNSS2hKWnRzTzU1ZzJHUmVsb0lhSFlUclVXckNub1o=
+loginShell: /bin/bash
+uidNumber: 539
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: sebas
+gecos: Sebastian Goncalves
+cn: sebas
+homeDirectory: /home/sebas
+
+dn: uid=rlink,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9SEs5SlNoNkkyeXNGbTJSZEsrR3VHSlloVFNZL3BPSDg=
+loginShell: /bin/bash
+uidNumber: 540
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rlink
+gecos: Rodrigo Link Federizzi
+cn: rlink
+homeDirectory: /home/rlink
+
+dn: uid=marfcg,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUZrZUt6TjE2bS8zUkU=
+loginShell: /bin/bash
+uidNumber: 541
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: marfcg
+gecos: Marcelo Ferreira da Costa Gomes
+cn: marfcg
+homeDirectory: /home/marfcg
+
+dn: uid=thielo,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9MkxROVczS1d3S3ZEWWl5R1dtVXEzT1A3Q3pKNmpBTWU=
+loginShell: /bin/bash
+uidNumber: 542
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: thielo
+gecos: Marcelo Thielo
+cn: thielo
+homeDirectory: /home/thielo
+
+dn: uid=fmetz,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9LzhGaUdSL3FIUjlRb2dCT0FVYWRua2VEb3JBYllGSkw=
+loginShell: /bin/bash
+uidNumber: 543
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: fmetz
+gecos: Fernando Lucas Metz
+cn: fmetz
+homeDirectory: /home/fmetz
+
+dn: uid=aendler,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9M3RMV0pFd3poYmR3d1BCY3pLNm1rUCs0ZzJMYjVjQTQ=
+loginShell: /bin/bash
+uidNumber: 544
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: aendler
+gecos: antonio endler
+cn: aendler
+homeDirectory: /home/aendler
+
+dn: uid=agenor,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9ZzQyKzk5WldrM0ZPZ3I5OVNDOGw1dXFRRDZ2blJ4RlQ=
+loginShell: /bin/bash
+uidNumber: 545
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: agenor
+gecos: Agenor Hentz da Silva Jr
+cn: agenor
+homeDirectory: /home/agenor
+
+dn: uid=roncaratti,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9TVdPMVZQT0tjdmFkS0dtdm80SnM4YlZFUVR6NXR3Rjg=
+loginShell: /bin/bash
+uidNumber: 546
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: roncaratti
+gecos: luiz fernando roncaratti jr
+cn: roncaratti
+homeDirectory: /home/roncaratti
+
+dn: uid=chris,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9NUVVcXZtTmtWbnZuS0taTTBQbk1KdzFTMzhCZlFXZ04=
+loginShell: /bin/bash
+uidNumber: 547
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: chris
+gecos: Christopher Thomas
+cn: chris
+homeDirectory: /home/chris
+
+dn: uid=eneves,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9ODNhU0xUYzBNd0kzWTR2dXBhMXZMVitnVm1uYlJoR28=
+loginShell: /bin/bash
+uidNumber: 548
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: eneves
+gecos: Eduardo Barros Neves
+cn: eneves
+homeDirectory: /home/eneves
+
+dn: uid=everton,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTg2c0lOaDBVb2FJcVU=
+loginShell: /bin/bash
+uidNumber: 549
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: everton
+gecos: Everton Agnes
+cn: everton
+homeDirectory: /home/everton
+
+dn: uid=rejane,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9RnRDYXZlQ3ZHdGcwTS9RRTVFRzUwTmRCTUtrQ2FZSy8=
+loginShell: /bin/bash
+uidNumber: 550
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rejane
+gecos: Rejane
+cn: rejane
+homeDirectory: /home/rejane
+
+dn: uid=mpoloureiro,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9ZGNtbHB3QTI1TWRCU0hUMWFWb2NYWXkvQkRzQ1UvL24=
+loginShell: /bin/bash
+uidNumber: 551
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: mpoloureiro
+gecos: Marcos Paulo
+cn: mpoloureiro
+homeDirectory: /home/mpoloureiro
+
+dn: uid=rogerpn,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9R0J0enhaVk5OeFlDS2tsRytBdVhiYWt0TzNKYUdKbGg=
+loginShell: /bin/bash
+uidNumber: 552
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rogerpn
+gecos: Roger Pizzato Nunes
+cn: rogerpn
+homeDirectory: /home/rogerpn
+
+dn: uid=cmoura,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9K3RHWEZ0MjA1UW0xbkdpdWdQSEFuREQ5cFBGeVN1Y2Q=
+loginShell: /bin/bash
+uidNumber: 553
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: cmoura
+gecos: Cassio Stein Moura
+cn: cmoura
+homeDirectory: /home/cmoura
+
+dn: uid=billoni,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9cXJZMnF1aXBhV01EV0cvS3RWVERHUVd6Y2xtYnBhWVI=
+loginShell: /bin/bash
+uidNumber: 554
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: billoni
+gecos: Orlando Vito Billoni
+cn: billoni
+homeDirectory: /home/billoni
+
+dn: uid=zerocool,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUtKb0h5LjMzZlAuYkk=
+loginShell: /bin/bash
+uidNumber: 555
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: zerocool
+gecos: Jose Luiz Rybarczyk Filho
+cn: zerocool
+homeDirectory: /home/zerocool
+
+dn: uid=tarcisio,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9b2tETThQN2hQYmhreEtCNy9xTjJpZ2gzVjdsVjVGQk0=
+loginShell: /bin/bash
+uidNumber: 556
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: tarcisio
+gecos: Tarcisio Nunes Teles
+cn: tarcisio
+homeDirectory: /home/tarcisio
+
+dn: uid=bonacina,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9RGlOeUE3SVg3YmFxeE1ac3hMZ2ttWVR3VnppTE9jWG8=
+loginShell: /bin/bash
+uidNumber: 557
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: bonacina
+gecos: Tiago Luis Bonacina
+cn: bonacina
+homeDirectory: /home/bonacina
+
+dn: uid=italo,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fThKQ0ZmSEh5SC5Oc00=
+loginShell: /bin/bash
+uidNumber: 558
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: italo
+gecos: italo gabriel neide
+cn: italo
+homeDirectory: /home/italo
+
+dn: uid=ismael,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fXQvQUI5cDRGeWZ6eWs=
+loginShell: /bin/bash
+uidNumber: 559
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: ismael
+gecos: Ismael Fortuna
+cn: ismael
+homeDirectory: /home/ismael
+
+dn: uid=carine,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVM3MW9wc2E0c3NieTI=
+loginShell: /bin/bash
+uidNumber: 560
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: carine
+gecos: carine beatrici
+cn: carine
+homeDirectory: /home/carine
+
+dn: uid=avill,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9ZXV5RkNvb29zbFVrZkZKQVhoMFJ4blkyK0VnWnVyRXc=
+loginShell: /bin/bash
+uidNumber: 561
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: avill
+gecos: Aline Villavicencio
+cn: avill
+homeDirectory: /home/avill
+
+dn: uid=lasalcedo,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9SVB5YUx2THdqQzQ3T0pTY0paR2lHYjUvblllM0J6OHk=
+loginShell: /bin/bash
+uidNumber: 562
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: lasalcedo
+gecos: Luiz Alberto Salcedo
+cn: lasalcedo
+homeDirectory: /home/lasalcedo
+
+dn: uid=jonathas,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTZ1OHdySExxSzdKNlE=
+loginShell: /bin/bash
+uidNumber: 563
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: jonathas
+gecos: Jonathas Nunes da Silva
+cn: jonathas
+homeDirectory: /home/jonathas
+
+dn: uid=szortyka,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fS5XS2Q2bXQucUk1S1k=
+loginShell: /bin/bash
+uidNumber: 564
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: szortyka
+gecos: Marcia Szortyka
+cn: szortyka
+homeDirectory: /home/szortyka
+
+dn: uid=tiberio,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9TVlZcFJEc0RnVnBZZUhZTm9CUHJxcXBqT2VrbWZ3dEo=
+loginShell: /bin/bash
+uidNumber: 565
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: tiberio
+gecos: Tiberio Borges Vale
+cn: tiberio
+homeDirectory: /home/tiberio
+
+dn: uid=samoel,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUZ1L1BIU3JtVGo5bmM=
+loginShell: /bin/bash
+uidNumber: 566
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: samoel
+gecos: Samoel Renan Mello da Silva
+cn: samoel
+homeDirectory: /home/samoel
+
+dn: uid=rgaelzer,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9dk1qS09aRE5HRU0vd3RQZUFYMVFvM0VvUGZKSFB2eHk=
+loginShell: /bin/bash
+uidNumber: 567
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rgaelzer
+gecos: Rudi Gaelzer
+cn: rgaelzer
+homeDirectory: /home/rgaelzer
+
+dn: uid=israel,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9bERJNnozNlYxMGsxK04rcXdYL3lHeWNSQlY4bkNucVM=
+loginShell: /bin/bash
+uidNumber: 568
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: israel
+gecos: Israel
+cn: israel
+homeDirectory: /home/israel
+
+dn: uid=iglesias,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9TCt0MXVrOHFoSlowNW1DNnI0RzdQT1lSRGtrMy9nN0k=
+loginShell: /bin/bash
+uidNumber: 569
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: iglesias
+gecos: Jose Roberto Iglesias
+cn: iglesias
+homeDirectory: /home/iglesias
+
+dn: uid=ney,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9aHpFKzhvMHU5RU1YMUFQMXk4MTBYSGltVmR3VVNiNGc=
+loginShell: /bin/bash
+uidNumber: 570
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: ney
+gecos: Ney Marcal
+cn: ney
+homeDirectory: /home/ney
+
+dn: uid=edgar,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9Qm45aWhWYkhMaEdkeXd2a25OWDNxTVhuTU0reXdUWE0=
+loginShell: /bin/bash
+uidNumber: 571
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: edgar
+gecos: Edgar Santos
+cn: edgar
+homeDirectory: /home/edgar
+
+dn: uid=alechand,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUpPV2hqTS9Dd2M1YnM=
+loginShell: /bin/bash
+uidNumber: 572
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: alechand
+gecos: Alexandre Pereira dos Santos
+cn: alechand
+homeDirectory: /home/alechand
+
+dn: uid=poderoso,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9RWxNUUtiTDBJWnVKNUFUMllzcWRpWG1KYXZJNDBqZFo=
+loginShell: /bin/bash
+uidNumber: 573
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: poderoso
+gecos: fabio campos poderoso
+cn: poderoso
+homeDirectory: /home/poderoso
+
+dn: uid=ricardo,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9UENMUERzN1FuaFFxYjhNL0NHQTNLWVQ0RmV2WWJRMzU=
+loginShell: /bin/bash
+uidNumber: 574
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: ricardo
+gecos: Ricardo Melo Ferreira
+cn: ricardo
+homeDirectory: /home/ricardo
+
+dn: uid=fernanda,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fWcyZndoMmgxSUdwTk0=
+loginShell: /bin/bash
+uidNumber: 575
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: fernanda
+gecos: Fernanda Benetti
+cn: fernanda
+homeDirectory: /home/fernanda
+
+dn: uid=jpavan,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9UTF6SC9GbkRnTjJucG81eGM4RFEzSjhJSDdPNDBQSDc=
+loginShell: /bin/bash
+uidNumber: 576
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: jpavan
+gecos: Joel Pavan
+cn: jpavan
+homeDirectory: /home/jpavan
+
+dn: uid=andrekuhn,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9VFBpb2N1OUdIaEp4UisrR3FkbWcwb3JNdUdITWIrSC8=
+loginShell: /bin/bash
+uidNumber: 577
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: andrekuhn
+gecos: Andre Dalpian Kuhn
+cn: andrekuhn
+homeDirectory: /home/andrekuhn
+
+dn: uid=jupaukowski,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9c04wOXpHTW1sbVdGV0dIL1dwY2lDTEVWMWErTUl6UFg=
+loginShell: /bin/bash
+uidNumber: 578
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: jupaukowski
+gecos: Juliana Zacharias Paukowski
+cn: jupaukowski
+homeDirectory: /home/jupaukowski
+
+dn: uid=cris,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9WURNZkdLc1ZjdHZkd3FyaUFaRlAvcnlVdFlzM1J1WWQ=
+loginShell: /bin/bash
+uidNumber: 579
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: cris
+gecos: Cristina Gavazzoni
+cn: cris
+homeDirectory: /home/cris
+
+dn: uid=guilherme,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9RmtjNEMySjVlSHBVd0hNcjgyRjB0Y1pQN0ZxaEJpbEo=
+loginShell: /bin/bash
+uidNumber: 580
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: guilherme
+gecos: Guilherme Goncalves Ferrari
+cn: guilherme
+homeDirectory: /home/guilherme
+
+dn: uid=egsouza,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9NEVHeTlJZHlxN0hlV2N0V3paRWFrU1ZSYmpITmFCT0I=
+loginShell: /bin/bash
+uidNumber: 581
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: egsouza
+gecos: Everton Granemann Souza
+cn: egsouza
+homeDirectory: /home/egsouza
+
+dn: uid=willianr,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9UmoyaU5TdVhWV053cmEwMlkyTUFZOXo1anp5cGY3MXA=
+loginShell: /bin/bash
+uidNumber: 582
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: willianr
+gecos: willian radunz
+cn: willianr
+homeDirectory: /home/willianr
+
+dn: uid=nep2n0,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9WjlrSXp5WVNKTk91UGJTb0VsZVJRZUk3azJBd3JoVHI=
+loginShell: /bin/bash
+uidNumber: 583
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: nep2n0
+gecos: Rogelio Diaz-Mendez,Lucas,Lucas Nicolao
+cn: nep2n0
+homeDirectory: /home/nep2n0
+
+dn: uid=prado,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTAyRTN0ay5IT3d2eXc=
+loginShell: /bin/bash
+uidNumber: 584
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: prado
+gecos: Sandra Prado
+cn: prado
+homeDirectory: /home/prado
+
+dn: uid=jocrisdias,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9OE9mZVlpQXlIc2llaXpGdHdRNHV6OWozQ1BhQi9Cdmw=
+loginShell: /bin/bash
+uidNumber: 585
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: jocrisdias
+gecos: Josiane Cristina Dias
+cn: jocrisdias
+homeDirectory: /home/jocrisdias
+
+dn: uid=riffel,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9M0tNaUtramZTZUUxUVlpYzlxVThLYzdTeGxwSWc0R1A=
+loginShell: /bin/bash
+uidNumber: 586
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: riffel
+gecos: Rogerio Riffel
+cn: riffel
+homeDirectory: /home/riffel
+
+dn: uid=alexp,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9NHlpQ3c4emkyWVNKcE9ZM3VXU2JuRmd2MEg4L21kbzU=
+loginShell: /bin/bash
+uidNumber: 587
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: alexp
+gecos: Alex Pedroso de Moraes
+cn: alexp
+homeDirectory: /home/alexp
+
+dn: uid=beatriz,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fXQyLnZCcXlYZlRsbVE=
+loginShell: /bin/bash
+uidNumber: 588
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: beatriz
+gecos: Beatriz Eymi Pimentel Mizusaki
+cn: beatriz
+homeDirectory: /home/beatriz
+
+dn: uid=sandi,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fW9rU1QubEJoYUxCek0=
+loginShell: /bin/bash
+uidNumber: 589
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: sandi
+gecos: Alessandra Lutz
+cn: sandi
+homeDirectory: /home/sandi
+
+dn: uid=vanzella,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9OFVRcG84RG1zWDZrSFZtelNuS1c3QXg4M0NuWkNxTnk=
+loginShell: /bin/bash
+uidNumber: 590
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: vanzella
+gecos: Melissa Vanzella
+cn: vanzella
+homeDirectory: /home/vanzella
+
+dn: uid=benhur,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9bDRUWEljZCtqek9YVVRxa3lDQVFTK1ZZM0FLRDdzOWo=
+loginShell: /bin/bash
+uidNumber: 591
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: benhur
+gecos: Benhur Briao
+cn: benhur
+homeDirectory: /home/benhur
+
+dn: uid=bordin,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fXEwaHE2RkpzUEZKY1U=
+loginShell: /bin/bash
+uidNumber: 592
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: bordin
+gecos: Jose Rafael Bordin
+cn: bordin
+homeDirectory: /home/bordin
+
+dn: uid=azevedo,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9YUlYR1dVcy93M0dRN25VbU1aNzlsY3NEdTNiTjRscy8=
+loginShell: /bin/bash
+uidNumber: 594
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: azevedo
+gecos: Gustavo de Medeiros Azevedo
+cn: azevedo
+homeDirectory: /home/azevedo
+
+dn: uid=quel,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9ZnZGbjZ1ZWExS3A3UWdHbTBSWGVZWjJmWnBvN1FZWEo=
+loginShell: /bin/bash
+uidNumber: 595
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: quel
+gecos: Raquel Waechter
+cn: quel
+homeDirectory: /home/quel
+
+dn: uid=andressa,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTdjTTdPQ0pQWXc3ZGM=
+loginShell: /bin/bash
+uidNumber: 596
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: andressa
+gecos: Andressa Antonini Bertolazzo
+cn: andressa
+homeDirectory: /home/andressa
+
+dn: uid=krott,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTIxWU5udHhwNlg2OG8=
+loginShell: /bin/bash
+uidNumber: 597
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: krott
+gecos: Leandro Krott
+cn: krott
+homeDirectory: /home/krott
+
+dn: uid=perrone,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fWM0S3VCRTk4MER3WTI=
+loginShell: /bin/bash
+uidNumber: 598
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: perrone
+gecos: Gabriel Cury Perrone
+cn: perrone
+homeDirectory: /home/perrone
+
+dn: uid=tgarcia,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9a3Z2a0dNMFVxMWZrQ0RyT1h6bDFaRmpOcmFGekIwN2s=
+loginShell: /bin/bash
+uidNumber: 599
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: tgarcia
+gecos: Thomas Garcia
+cn: tgarcia
+homeDirectory: /home/tgarcia
+
+dn: uid=lucianoborba,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9UTZ6WERPL1lEYWkvMjBzczRibU42NzVQbjRvV1g1aTI=
+loginShell: /bin/bash
+uidNumber: 600
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: lucianoborba
+gecos: lucianoborba
+cn: lucianoborba
+homeDirectory: /home/lucianoborba
+
+dn: uid=rdasilva,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fS9vZTFoM282RlQ4Sm8=
+loginShell: /bin/bash
+uidNumber: 602
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rdasilva
+gecos: Roberto da Silva
+cn: rdasilva
+homeDirectory: /home/rdasilva
+
+dn: uid=francovalduga,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVBMTE4vV1o1c0h3b2c=
+loginShell: /bin/bash
+uidNumber: 603
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: francovalduga
+gecos: Franco Valduga, 00129844, M206
+cn: francovalduga
+homeDirectory: /home/francovalduga
+
+dn: uid=lbpiovesan,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9VXc1NnZVZjBuNmxHMy94ZjV3S05QeXRvTjBodURkQ0Y=
+loginShell: /bin/bash
+uidNumber: 604
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: lbpiovesan
+gecos: Laura Bottin Piovesan, 182639, N211
+cn: lbpiovesan
+homeDirectory: /home/lbpiovesan
+
+dn: uid=mrsilva,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUxQRC5Pa055VWNqVFk=
+loginShell: /bin/bash
+uidNumber: 605
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: mrsilva
+gecos: Marcos Rodrigo da Silva
+cn: mrsilva
+homeDirectory: /home/mrsilva
+
+dn: uid=rbarbosa,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVVXNTdNUUdRR2t1VEU=
+loginShell: /bin/bash
+uidNumber: 606
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rbarbosa
+gecos: Rafael de Carvalho Barbosa, 255144, M205
+cn: rbarbosa
+homeDirectory: /home/rbarbosa
+
+dn: uid=lauraprandi,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUlEajhyOEZkeXVhQjI=
+loginShell: /bin/bash
+uidNumber: 607
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: lauraprandi
+gecos: Laura Prandi
+cn: lauraprandi
+homeDirectory: /home/lauraprandi
+
+dn: uid=liliane,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fXUuU3JQS1hjRmlpZVE=
+loginShell: /bin/bash
+uidNumber: 608
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: liliane
+gecos: Liliane Lewis
+cn: liliane
+homeDirectory: /home/liliane
+
+dn: uid=jardel,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fW9GNE9xSk8yVFU5ZUk=
+loginShell: /bin/bash
+uidNumber: 609
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: jardel
+gecos: Jardel Cestari, M208
+cn: jardel
+homeDirectory: /home/jardel
+
+dn: uid=dfrydel,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fU04YnpIcVBCYkg0S2s=
+loginShell: /bin/bash
+uidNumber: 610
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: dfrydel
+gecos: Derek Frydel, Salas dos Post-docs predio N
+cn: dfrydel
+homeDirectory: /home/dfrydel
+
+dn: uid=zigue,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVFXVDl2TEwzTWdNV00=
+loginShell: /bin/bash
+uidNumber: 611
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: zigue
+gecos: Gabriel Zigue, M216, 136489
+cn: zigue
+homeDirectory: /home/zigue
+
+dn: uid=zezo,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVk1OFQubWRnaW9aazY=
+loginShell: /bin/bash
+uidNumber: 612
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: zezo
+gecos: Jose Luiz Ferreira Jr, 151721, M208, Ramal 6504
+cn: zezo
+homeDirectory: /home/zezo
+
+dn: uid=furlan,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUQ2bFRvTDJ0bnhUMFE=
+loginShell: /bin/bash
+uidNumber: 613
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: furlan
+gecos: Alexandre Penteado Furlan, M205
+cn: furlan
+homeDirectory: /home/furlan
+
+dn: uid=tekkito,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTI1YTByVmk4TlRFRmM=
+loginShell: /bin/bash
+uidNumber: 614
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: tekkito
+gecos: Raphael Imbuzeiro, 209040, L205
+cn: tekkito
+homeDirectory: /home/tekkito
+
+dn: uid=pablovalverde,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTFORlR5OEZOMjQ2Ync=
+loginShell: /bin/bash
+uidNumber: 615
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: pablovalverde
+gecos: Pablo Valverde, 196321, N207
+cn: pablovalverde
+homeDirectory: /home/pablovalverde
+
+dn: uid=maximiliano,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTIwcS5kbHJCNzBQOTY=
+loginShell: /bin/bash
+uidNumber: 616
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: maximiliano
+gecos: Maximiliano Jesus Moreno Zapata, PG, Lab. Durao
+cn: maximiliano
+homeDirectory: /home/maximiliano
+
+dn: uid=ambotelho,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTFxUDZRMmIvTllRYUE=
+loginShell: /bin/bash
+uidNumber: 617
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: ambotelho
+gecos: Ataides Martins Botelho Neto, 00204825, M216
+cn: ambotelho
+homeDirectory: /home/ambotelho
+
+dn: uid=mendeli,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fXc0Zk5mbVNwTE56SHc=
+loginShell: /bin/bash
+uidNumber: 618
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: mendeli
+gecos: Mendeli Vainstein, 94554, N206 6474
+cn: mendeli
+homeDirectory: /home/mendeli
+
+dn: uid=creq,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTR2MmJGSFY1RUNiOGs=
+loginShell: /bin/bash
+uidNumber: 619
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: creq
+gecos: Carlo Requiao, N114
+cn: creq
+homeDirectory: /home/creq
+
+dn: uid=nmallmann,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fURwVC5aLk51WjJpMy4=
+loginShell: /bin/bash
+uidNumber: 620
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: nmallmann
+gecos: Nicolas Mallmann, 150253, Lab. Microeletronica
+cn: nmallmann
+homeDirectory: /home/nmallmann
+
+dn: uid=anacarol,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTRScHZrb2lMeXZaQWc=
+loginShell: /bin/bash
+uidNumber: 621
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: anacarol
+gecos: Ana Carolina Ribeiro Teixeira, 80243020, N224
+cn: anacarol
+homeDirectory: /home/anacarol
+
+dn: uid=slurm,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9OE96MjU0K2tSNVBsR0V5bElFbXpna0hQVE5CdkhFaTA=
+loginShell: /bin/bash
+uidNumber: 622
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: slurm
+gecos: slurm, auxiliar para gpu
+cn: slurm
+homeDirectory: /home/slurm
+
+dn: uid=doria,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVl1YzB4V2dRTUtET3c=
+loginShell: /bin/bash
+uidNumber: 623
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: doria
+gecos: Felipe Franca Doria, Aluno PG, Orientador Rubem Erichsen
+cn: doria
+homeDirectory: /home/doria
+
+dn: uid=michou,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fWdIa25RZVcwbkt5Y1U=
+loginShell: /bin/bash
+uidNumber: 624
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: michou
+gecos: Charlotte Rulquin, N210
+cn: michou
+homeDirectory: /home/michou
+
+dn: uid=marcelo13,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVFBbUQweUlwL0RnMmc=
+loginShell: /bin/bash
+uidNumber: 625
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: marcelo13
+gecos: Marcelo Castaneda, M202, 6496
+cn: marcelo13
+homeDirectory: /home/marcelo13
+
+dn: uid=thalestr,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fTZRZDlLWDdUZXc5cVk=
+loginShell: /bin/bash
+uidNumber: 626
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: thalestr
+gecos: Thales Marques Correa da Silva, 00159543, M206
+cn: thalestr
+homeDirectory: /home/thalestr
+
+dn: uid=daniel,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9TkFSeTJXNklXb1IyaWpXd25mWVlGNmtVc3pCYnRLMkM=
+loginShell: /bin/bash
+uidNumber: 627
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: daniel
+gecos: Daniel de Oliveira Berto,  171711,  34937580
+cn: daniel
+homeDirectory: /home/daniel
+
+dn: uid=michou2,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9UW94S1FBeFhXbEtidE9HcklHRXYySmwvM01WRm0yZk0=
+loginShell: /bin/bash
+uidNumber: 628
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: michou2
+gecos: Charlotte Rulquin, N214
+cn: michou2
+homeDirectory: /home/michou2
+
+dn: uid=alan,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9OTNpUmYzcHpZcVM0WDhvRFBJNmc0eWxwVm9Pa0doOWo=
+loginShell: /bin/bash
+uidNumber: 629
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: alan
+gecos: Alan Barros de Oliveira
+cn: alan
+homeDirectory: /home/alan
+
+dn: uid=ruben.carvalho,ou=usuarios, dc=ada
+userPassword:: e1NTSEF9RkhBMVZuNy8xOFNDVk51c2JWOXVsaTF3ZVhDT3hvVVo=
+loginShell: /bin/bash
+uidNumber: 630
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: ruben.carvalho
+gecos: Rubens Carvalho, M207
+cn: ruben.carvalho
+homeDirectory: /home/ruben.carvalho
+
+dn: uid=rubens.carvalho,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUsvc0xlR2s5VEhrVXM=
+loginShell: /bin/bash
+uidNumber: 631
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: rubens.carvalho
+gecos: Rubens Carvalho, M207
+cn: rubens.carvalho
+homeDirectory: /home/rubens.carvalho
+
+dn: uid=vquadros,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fVQ1WmhVbkovY2MvZW8=
+loginShell: /bin/bash
+uidNumber: 632
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: vquadros
+gecos: Vanessa Quadros, PG
+cn: vquadros
+homeDirectory: /home/vquadros
+
+dn: uid=cassiok,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fWQzeWMxbUJBeUpmLms=
+loginShell: /bin/bash
+uidNumber: 633
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: cassiok
+gecos: Cassio, Bolsista Setor Informatica
+cn: cassiok
+homeDirectory: /home/cassiok
+
+dn: uid=luna,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fUVoQWZnTUZwSTdpZS4=
+loginShell: /bin/bash
+uidNumber: 634
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: luna
+gecos: Emerson Luna, 00213406, casarosada310
+cn: luna
+homeDirectory: /home/luna
+
+dn: uid=broilo,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fWVxb0lXaHdLeVROWmM=
+loginShell: /bin/bash
+uidNumber: 635
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: broilo
+gecos: Mateus Broilo
+cn: broilo
+homeDirectory: /home/broilo
+
+dn: uid=mlsilvestrini,ou=usuarios, dc=ada
+userPassword:: e2NyeXB0fXl0bFRONEtiS1NheC4=
+loginShell: /bin/bash
+uidNumber: 636
+gidNumber: 100
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+uid: mlsilvestrini
+gecos: Marion Silvestrini, 208620
+cn: mlsilvestrini
+homeDirectory: /home/mlsilvestrini
+
