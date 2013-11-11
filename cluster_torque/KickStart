@@ -2,6 +2,33 @@
 1 - Instalacao basica do Debian
 2 - Configuracao das interface de Rede: Garantir que a interface de rede eth0 seja a interface externa
     Para ordernar altere as regras do udev em /etc/udev/rules.d/70-persistent-net.rules
+
+#####
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+allow-hotplug eth0
+iface eth0 inet dhcp
+
+### Rede MPI
+auto eth1
+iface eth1 inet static
+	address 192.168.1.254
+	netmask 255.255.255.0
+	broadcast 192.168.1.255
+        mtu 7200
+
+### Rede NFS
+auto eth2
+iface eth2 inet static
+	address 10.1.0.254
+	netmask 255.255.255.0
+	broadcast 10.1.0.255
+        mtu 7200
+#####
+
+
 3 - apt-get update 
 4 - apt-get install puppet
 5 - apt-get install git
