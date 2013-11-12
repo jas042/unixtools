@@ -5,7 +5,9 @@ include pxe
 include openldap
 include openiscsi  
 include nfs
-#include maiu  
+#include maui  
+#include ganglia  
+#include mpich 
 #include slurm  
 #include torque  
 

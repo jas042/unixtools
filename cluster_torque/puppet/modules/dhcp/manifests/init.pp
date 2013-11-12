@@ -9,7 +9,6 @@ service { 'isc-dhcp-server':
   name      => isc-dhcp-server,
   ensure    => running,
   enable    => true,
-  subscribe => File['sysconfig_dhcp'],
 }
 
 file { 'dhcpd.conf':
@@ -18,6 +17,7 @@ file { 'dhcpd.conf':
   require => Package['isc-dhcp-server'],
   source  => "puppet:///modules/dhcp/dhcpd.conf",
   subscribe => File['hosts.conf'],
+  notify => Service['isc-dhcp-server'],
 }
 
 file { 'hosts.conf':
