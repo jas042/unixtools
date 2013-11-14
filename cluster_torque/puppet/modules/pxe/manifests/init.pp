@@ -1,7 +1,7 @@
 class pxe {
 
 ## Suporte o BOOTP + TFTP 
-package { 'atftpd':
+package { 'tftpd-hpa':
   ensure => installed,
 }
 
@@ -9,16 +9,16 @@ package { 'rlinetd':
   ensure => purged,
 }
 
-service { 'atftpd':
-  name      => atftpd,
+service { 'tftpd-hpa':
+  name      => tftpd-hpa,
   ensure    => running,
   enable    => true,
 }
 
-file { 'atftpd':
-  path    => '/etc/default/atftpd',
+file { 'tftpd-hpa':
+  path    => '/etc/default/tftpd-hpa',
   ensure  => file,
-  source  => "puppet:///modules/pxe/sysconfig_atftpd",
+  source  => "puppet:///modules/pxe/sysconfig_tftpd-hpa",
 }
 
 file { "/tftpboot":
