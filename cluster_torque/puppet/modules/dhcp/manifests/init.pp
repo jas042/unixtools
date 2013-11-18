@@ -17,7 +17,6 @@ file { 'dhcpd.conf':
   require => Package['isc-dhcp-server'],
   source  => "puppet:///modules/dhcp/dhcpd.conf",
   subscribe => File['hosts.conf'],
-  notify => Service['isc-dhcp-server'],
 }
 
 file { 'hosts.conf':
@@ -25,6 +24,7 @@ file { 'hosts.conf':
   ensure  => file,
   require => Package['isc-dhcp-server'],
   source  => "puppet:///modules/dhcp/hosts.conf",
+  notify => Service['isc-dhcp-server'],
 }
 
 file { 'sysconfig_dhcp':
@@ -32,6 +32,7 @@ file { 'sysconfig_dhcp':
   ensure  => file,
   require => Package['isc-dhcp-server'],
   source  => "puppet:///modules/dhcp/sysconfig_dhcp",
+  notify => Service['isc-dhcp-server'],
 }
 
 }

@@ -19,6 +19,7 @@ file { 'tftpd-hpa':
   path    => '/etc/default/tftpd-hpa',
   ensure  => file,
   source  => "puppet:///modules/pxe/sysconfig_tftpd-hpa",
+  notify => Service['tftpd-hpa'];
 }
 
 file { "/tftpboot":
