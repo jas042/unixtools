@@ -21,4 +21,8 @@ class extra_package {
      ensure => installed,
    }
 
+   package { 'sudo': 
+     ensure => installed,
+   }
+
 }
