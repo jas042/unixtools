@@ -19,4 +19,5 @@ define replace($file, $line, $ensure = 'present') {
 $extlookup_datadir = "/etc/puppet/manifests/data" 
 $extlookup_precedence = [$environment, 'common']
 include fpm
-include torque
+include torque::params
+include torque::compile

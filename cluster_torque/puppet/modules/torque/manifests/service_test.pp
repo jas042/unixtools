@@ -21,17 +21,17 @@ class torque::service_test {
 		require => Service['pbs_mom'],
 	}
 
-	exec { 'test-qsub':
-		cwd => "${torque::params::install_src}",
-		path => "/usr/bin:/bin",
-		command => "sudo -u ${torque_user_not_root} ${torque::params::install_dist}/bin/qsub -l host=${hostname} test.sh",
-		require => [
-			File["${torque::params::install_src}/test.sh"],
-		],
-		tries => 3,
-		try_sleep => 1,
-		unless => 'ls ${torque::params::install_src}/test.sh.o*',
-	}
+	#exec { 'test-qsub':
+	#	cwd => "${torque::params::install_src}",
+		#path => "/usr/bin:/bin",
+		#command => "sudo -u ${torque_user_not_root} ${torque::params::install_dist}/bin/qsub -l host=${hostname} test.sh",
+		#require => [
+		#	File["${torque::params::install_src}/test.sh"],
+	#	],
+	#	tries => 3,
+	#	try_sleep => 1,
+	#	unless => 'ls ${torque::params::install_src}/test.sh.o*',
+	#}
 
 }
 
