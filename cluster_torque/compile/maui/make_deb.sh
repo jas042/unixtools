@@ -26,4 +26,4 @@ cd $TMPBUILD
 fpm -s dir -t deb -n maui-if -v $VERSION -C $TMPBUILD -p maui-if_"$VERSION"_amd64.deb *
 cd -
 clear
-printf "\x1b[5mPacote DEB disponivel em $TMPBUILD/ !\x1b[25\n"
+echo "Pacote DEB disponivel em $TMPBUILD/"
