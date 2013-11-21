@@ -1,15 +1,29 @@
-cd maui-3.3.1
+#!/bin/bash
+
+##
+# Vars
+#
+SRC="/root/tmp/maui-3.3.1"
+VERSION="3.3.1"
+TMPBUILD="/tmp/build_maui"
+CONFIGURE_FLAGS=" "
+
+##
+#
+#
+cd $SRC
+rm -rf $TMPBUILD
 make clean
-rm -rf /tmp/build_maui
-rm /root/maui-if_3.3.1_amd64.deb
-./configure
+./configure $CONFIGURE_FLAGS
 make
-mkdir -p /tmp/build_maui/usr/local/maui 
-make install INST_DIR=/tmp/build_maui/usr/local/maui
-cp maui.cfg.dist /tmp/build_maui/usr/local/maui/maui.cfg
-cp maui-private.cfg.dist /tmp/build_maui/usr/local/maui/maui-private.cfg
-mkdir -p /tmp/build_maui/etc/init.d
-cp contrib/service-scripts/suse.maui.d /tmp/build_maui/etc/init.d/maui
-cd /tmp/build_maui
-fpm -s dir -t deb -n maui-if -v 3.3.1 -C /tmp/build_maui -p /root/maui-if_3.3.1_amd64.deb *
+mkdir -p $TMPBUILD/usr/local/maui 
+make install INST_DIR=$TMPBUILD/usr/local/maui
+cp maui.cfg.dist $TMPBUILD/usr/local/maui/maui.cfg
+cp maui-private.cfg.dist $TMBUILD/usr/local/maui/maui-private.cfg
+mkdir -p $TMPBUILD/etc/init.d
+cp contrib/service-scripts/suse.maui.d $TMPBUILD/etc/init.d/maui
+cd $TMPBUILD
+fpm -s dir -t deb -n maui-if -v $VERSION -C $TMPBUILD -p maui-if_"$VERSION"_amd64.deb *
 cd -
+clear
+printf "\x1b[5mPacote DEB disponivel em $TMPBUILD/ !\x1b[25\n"
