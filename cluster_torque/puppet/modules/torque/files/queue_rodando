@@ -1,0 +1,16 @@
+<queue>
+<modified>0</modified>
+<type>2</type>
+<create_time>0</create_time>
+<modify_time>0</modify_time>
+<name>rodando</name>
+<attributes>
+<queue_type>Route</queue_type>
+<total_jobs>0</total_jobs>
+<state_count>Transit:0 Queued:0 Held:0 Waiting:0 Running:0 Exiting:0 Complete:0</state_count>
+<mtime>1385062452</mtime>
+<route_destinations>o_tres_horas,o_um_dia,o_tres_dias,o_uma_semana,o_um_mes,o_seis_meses,q_tres_horas,q_um_dia,q_tres_dias,q_uma_semana,q_um_mes,q_seis_meses,dez_min,meia_hora,uma_hora,tres_horas,um_dia,tres_dias,uma_semana,um_mes,seis_meses</route_destinations>
+<enabled>1</enabled>
+<started>1</started>
+</attributes>
+</queue>

@@ -1,0 +1,29 @@
+<queue>
+<modified>0</modified>
+<type>1</type>
+<create_time>0</create_time>
+<modify_time>0</modify_time>
+<name>seis_meses</name>
+<attributes>
+<queue_type>Execution</queue_type>
+<Priority>20</Priority>
+<max_queuable>30</max_queuable>
+<total_jobs>0</total_jobs>
+<state_count>Transit:0 Queued:0 Held:0 Waiting:0 Running:0 Exiting:0 Complete:0</state_count>
+<resources_max>		<nodect>8</nodect>
+		<nodes>8</nodes>
+		<walltime>16070400</walltime>
+</resources_max>
+<resources_min>		<walltime>2678401</walltime>
+</resources_min>
+<resources_default>		<nodect>1</nodect>
+		<nodes>1</nodes>
+		<walltime>16070400</walltime>
+</resources_default>
+<mtime>1385062452</mtime>
+<kill_delay>300</kill_delay>
+<max_user_run>2</max_user_run>
+<enabled>1</enabled>
+<started>1</started>
+</attributes>
+</queue>

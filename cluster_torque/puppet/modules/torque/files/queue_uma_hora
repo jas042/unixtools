@@ -1,0 +1,29 @@
+<queue>
+<modified>0</modified>
+<type>1</type>
+<create_time>0</create_time>
+<modify_time>0</modify_time>
+<name>uma_hora</name>
+<attributes>
+<queue_type>Execution</queue_type>
+<Priority>100</Priority>
+<total_jobs>0</total_jobs>
+<state_count>Transit:0 Queued:0 Held:0 Waiting:0 Running:0 Exiting:0 Complete:0</state_count>
+<resources_max>		<ncpus>80</ncpus>
+		<nodect>16</nodect>
+		<nodes>16</nodes>
+		<walltime>3600</walltime>
+</resources_max>
+<resources_min>		<walltime>1801</walltime>
+</resources_min>
+<resources_default>		<nodect>1</nodect>
+		<nodes>1</nodes>
+		<walltime>3600</walltime>
+</resources_default>
+<mtime>1385062452</mtime>
+<kill_delay>300</kill_delay>
+<max_user_run>6</max_user_run>
+<enabled>1</enabled>
+<started>1</started>
+</attributes>
+</queue>

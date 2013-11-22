@@ -25,4 +25,8 @@ class extra_package {
      ensure => installed,
    }
 
+   package { 'gfortran': 
+     ensure => installed,
+   }
+#ifort e icc
 }
