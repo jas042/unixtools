@@ -8,7 +8,7 @@ TMPDIR="/tmp/build_image"
 cp -r files /tmp/tmpnodefiles
 
 keep="n"
-CONFDIR="initramfs-tools"
+CONFDIR="/etc/initramfs-tools"
 verbose="n"
 test -e /bin/busybox && BUSYBOXDIR=/bin
 test -e /usr/lib/initramfs-tools/bin/busybox && BUSYBOXDIR=/usr/lib/initramfs-tools/bin
@@ -38,7 +38,6 @@ while true; do
 	-o)
 		outfile="$2"
 		shift 2
-                ROOT="/MNTROOT"
 		;;
 	-k)
 		keep="y"
@@ -248,11 +247,14 @@ cp -p /usr/share/initramfs-tools/init ${DESTDIR}/init
 ####### Customizacoes ADA para os nodes
 #######
 # Multistrap
-if [ -e /usr/sbin/multistrap ];then /usr/sbin/multistrap -d ${DESTDIR}/MNTROOT -f /tmp/tmpnodefiles/node.multistrap;else echo "Please install multistrap!";fi
-cp /tmp/tmpnodefiles/fstab_node ${DESTDIR}/MNTROOT/etc/
-mkdir -p ${DESTDIR}/MNTROOT/root/.ssh
-cp /tmp/tmpnodefiles/ssh_root.pub ${DESTDIR}/MNTROOT/root/.ssh/authorized_keys
+if [ -e /usr/sbin/multistrap ];then
+/usr/sbin/multistrap -d ${DESTDIR}/root -f /tmp/tmpnodefiles/node.multistrap
+cp /tmp/tmpnodefiles/fstab_node ${DESTDIR}/root/etc/
+mkdir -p ${DESTDIR}/root/root/.ssh
+cp /tmp/tmpnodefiles/ssh_root.pub ${DESTDIR}/root/root/.ssh/authorized_keys
 rm -rf /tmp/tmpnodefiles
+else echo "Please install multistrap!";
+fi
 #######
 #######
 #######
