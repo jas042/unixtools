@@ -8,6 +8,12 @@ class extra_package {
      notify  => Exec["apt-get update"],
    }
 
+   file { 'hosts':
+     path    => '/etc/hosts',
+     ensure  => file,
+     source  => "puppet:///modules/extra_package/hosts",
+   }
+
    exec { "apt-get update":
      command => "/usr/bin/apt-get update",
      require => File['sources.list'],
