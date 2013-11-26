@@ -1,6 +1,6 @@
 [General]
 arch=amd64
-directory=/tmp/multistrap/
+#directory=/tmp/multistrap/
 cleanup=true
 noauth=false
 explicitsuite=false
