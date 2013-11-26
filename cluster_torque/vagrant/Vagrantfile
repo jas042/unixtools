@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
  config.vm.box = "wheezy64"
    projeto = 'cluster_torque'
    rede_externa =
-   rede_mpi = '192.168.1'
+   rede_mpi = '10.2.0'
    rede_nfs = '10.1.0'
 
  

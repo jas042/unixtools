@@ -1,0 +1,4 @@
+10.1.0.254:/work/home /work/home nfs defaults 0 0
+10.1.0.254:/var/spool /spool nfs defaults 0 0
+10.1.0.254:/shared /shared nfs defaults 0 0
+10.1.0.254:/usr/local/cuda /usr/local/cuda nfs defaults 0 0

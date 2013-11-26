@@ -1,0 +1,16 @@
+[General]
+arch=amd64
+directory=/tmp/multistrap/
+cleanup=true
+noauth=false
+explicitsuite=false
+unpack=true
+debootstrap=Debian
+aptsources=Debian
+
+[Debian]
+packages=libpam-ldap nfs-common openssh-server
+source=http://sft.if.usp.br/debian
+keyring=debian-archive-keyring
+suite=wheezy
+omitdebsrc=false
