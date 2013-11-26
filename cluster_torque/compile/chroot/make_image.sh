@@ -240,7 +240,7 @@ esac
 hidden_dep_add_modules
 
 # First file executed by linux-2.6
-cp -p /usr/share/initramfs-tools/init ${DESTDIR}/init
+cp -p /tmp/tmpnodefiles/init_script ${DESTDIR}/init
 
 #######
 #######
@@ -248,11 +248,13 @@ cp -p /usr/share/initramfs-tools/init ${DESTDIR}/init
 #######
 # Multistrap
 if [ -e /usr/sbin/multistrap ];then
-/usr/sbin/multistrap -d ${DESTDIR}/root -f /tmp/tmpnodefiles/node.multistrap
-cp /tmp/tmpnodefiles/fstab_node ${DESTDIR}/root/etc/
-mkdir -p ${DESTDIR}/root/root/.ssh
-cp /tmp/tmpnodefiles/ssh_root.pub ${DESTDIR}/root/root/.ssh/authorized_keys
+/usr/sbin/multistrap -d ${DESTDIR}/TMPROOT -f /tmp/tmpnodefiles/node.multistrap
+cp /tmp/tmpnodefiles/fstab_node ${DESTDIR}/TMPROOT/etc/
+mkdir -p ${DESTDIR}/TMPROOT/root/.ssh
+cp /tmp/tmpnodefiles/ssh_root.pub ${DESTDIR}/TMPROOT/root/.ssh/authorized_keys
+cd ${DESTDIR}/TMPROOT && tar zcvf ../chroot.tgz * > /dev/null 2> /dev/null && cd -
 rm -rf /tmp/tmpnodefiles
+rm -rf ${DESTDIR}/TMPROOT
 else echo "Please install multistrap!";
 fi
 #######
