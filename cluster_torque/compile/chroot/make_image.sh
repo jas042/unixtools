@@ -241,6 +241,7 @@ hidden_dep_add_modules
 
 # First file executed by linux-2.6
 cp -p /tmp/tmpnodefiles/init_script ${DESTDIR}/init
+chmod 755 ${DESTDIR}/init
 
 #######
 #######
