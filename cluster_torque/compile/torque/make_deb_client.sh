@@ -6,7 +6,7 @@
 SRC="/root/tmp/torque-4.2.6"
 VERSION="4.2.6"
 TMPBUILD="/tmp/build_torque"
-CONFIGURE_FLAGS="--with-default-server=ada2-mpi --with-server-home=/var/spool/torque --with-pam=yes --enable-nvidia-gpus"
+CONFIGURE_FLAGS=" --disable-server --with-default-server=ada2-mpi --with-server-home=/var/spool/torque --with-pam=yes --enable-nvidia-gpus"
 
 ##
 #
@@ -24,7 +24,7 @@ cp contrib/init.d/debian.trqauthd $TMPBUILD/etc/init.d/trqauthd
 cp contrib/init.d/debian.pbs_server $TMPBUILD/etc/init.d/pbs_server
 cp contrib/init.d/debian.pbs_mom $TMPBUILD/etc/init.d/pbs_mom
 cd $TMPBUILD
-fpm -s dir -t deb -n torque-if -v $VERSION -C $TMPBUILD -p torque-if_"$VERSION"_amd64.deb *
+fpm -s dir -t deb -n torque-if -v $VERSION -C $TMPBUILD -p torque-if-client_"$VERSION"_amd64.deb *
 cd -
 clear
 echo "Pacote DEB disponivel em $TMPBUILD !"
