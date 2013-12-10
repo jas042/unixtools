@@ -9,7 +9,7 @@ debootstrap=Debian
 aptsources=Debian
 
 [Debian]
-packages= iputils-ping vim isc-dhcp-client ifupdown linux-base linux-image-3.2.0-4-amd6 kmod net-tools bash libpam-ldap nfs-common openssh-server
+packages=iputils-ping vim isc-dhcp-client ifupdown linux-base linux-image-3.2.0-4-amd6 kmod net-tools bash libpam-ldap nfs-common openssh-server
 source=http://debian.if.ufrgs.br/debian
 keyring=debian-archive-keyring
 suite=wheezy
