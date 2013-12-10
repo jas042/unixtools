@@ -4,3 +4,4 @@ deb http://security.debian.org/ wheezy/updates main contrib non-free
 #deb-src http://security.debian.org/ wheezy/updates main contrib non-free
 deb http://debian.if.ufrgs.br/debian/ wheezy-updates main contrib non-free
 #deb-src http://debian.if.ufrgs.br/debian/ wheezy-updates main contrib non-free
+deb http://debian.if.ufrgs.br/cluster ClusterIF main
