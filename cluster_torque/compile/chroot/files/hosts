@@ -1,0 +1,63 @@
+127.0.0.1	localhost
+
+127.0.0.1	localhost.localdomain	localhost
+10.2.0.254      ada2-mpi ada2-mpi
+10.1.0.254      ada2 ada2
+
+#RACK 2 
+10.2.0.201	node201 node201
+10.2.0.202	node202 node202
+10.2.0.203	node203 node203
+10.2.0.204	node204 node204
+10.2.0.205	node205 node205
+10.2.0.206	node206 node206
+
+10.2.0.211	node211 node211
+10.2.0.212	node212 node212
+10.2.0.213	node213 node213
+10.2.0.214	node214 node214
+10.2.0.215	node215 node215
+10.2.0.216	node216 node216
+
+10.2.0.221	node221 node221
+10.2.0.222	node222 node222
+10.2.0.223	node223 node223
+10.2.0.224	node224 node224
+10.2.0.225	node225 node225
+10.2.0.226	node226 node226
+
+10.2.0.231	node231 node231
+10.2.0.232	node232 node232
+10.2.0.233	node233 node233
+10.2.0.234	node234 node234
+10.2.0.235	node235 node235
+10.2.0.236	node236 node236
+
+#RACK 1
+10.2.0.101	node101 node101
+10.2.0.102	node102 node102
+10.2.0.103	node103 node103
+10.2.0.104	node104 node104
+10.2.0.105	node105 node105
+10.2.0.106	node106 node106
+
+10.2.0.111	node111 node111
+10.2.0.112	node112 node112
+10.2.0.113	node113 node113
+10.2.0.114	node114 node114
+10.2.0.115	node115 node115
+10.2.0.116	node116 node116
+
+10.2.0.121	node121 node121
+10.2.0.122	node122 node122
+10.2.0.123	node123 node123
+10.2.0.124	node124 node124
+10.2.0.125	node125 node125
+10.2.0.126	node126 node126
+
+10.2.0.131	node131 node131
+10.2.0.132	node132 node132
+10.2.0.133	node133 node133
+10.2.0.134	node134 node134
+10.2.0.135	node135 node135
+10.2.0.136	node136 node136

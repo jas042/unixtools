@@ -1,10 +1,10 @@
 include dhcp
 include extra_package
-include ntp	
+#include ntp	
 include pxe	
-include openldap
-include openiscsi  
-include nfs
+#include openldap
+#include openiscsi  
+#include nfs
 #include maui  
 #include ganglia  
 #include mpich 

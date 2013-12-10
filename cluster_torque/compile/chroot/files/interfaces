@@ -1,0 +1,11 @@
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# MPI
+allow-hotplug eth0
+iface eth0 inet dhcp
+
+# NFS
+allow-hotplug eth1
+iface eth1 inet dhcp

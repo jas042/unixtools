@@ -5,6 +5,7 @@ export PATH='/usr/bin:/sbin:/bin'
 
 # Defaults
 TMPDIR="/tmp/build_image"
+[ -e $TMPDIR ] && rm -rf $TMPDIR
 cp -r files /tmp/tmpnodefiles
 
 keep="n"
@@ -241,7 +242,7 @@ hidden_dep_add_modules
 
 # First file executed by linux-2.6
 cp -p /tmp/tmpnodefiles/init_script ${DESTDIR}/init
-chmod 755 ${DESTDIR}/init
+#chmod 755 ${DESTDIR}/init
 
 #######
 #######
@@ -249,14 +250,12 @@ chmod 755 ${DESTDIR}/init
 #######
 # Multistrap
 if [ -e /usr/sbin/multistrap ];then
-/usr/sbin/multistrap -d ${DESTDIR}/TMPROOT -f /tmp/tmpnodefiles/node.multistrap
-cp /tmp/tmpnodefiles/fstab_node ${DESTDIR}/TMPROOT/etc/
-mkdir -p ${DESTDIR}/TMPROOT/root/.ssh
-cp /tmp/tmpnodefiles/ssh_root.pub ${DESTDIR}/TMPROOT/root/.ssh/authorized_keys
+/usr/sbin/multistrap --tidy-up -d ${DESTDIR}/TMPROOT -f /tmp/tmpnodefiles/node.multistrap
+sh /tmp/tmpnodefiles/image_custom.sh
 cd ${DESTDIR}/TMPROOT && tar zcvf ../chroot.tgz * > /dev/null 2> /dev/null && cd -
 rm -rf /tmp/tmpnodefiles
 rm -rf ${DESTDIR}/TMPROOT
-else echo "Please install multistrap!";
+else echo "Por favor instale o multistrap!";
 fi
 #######
 #######
