@@ -16,11 +16,4 @@ cp /tmp/tmpnodefiles/ssh_init ${DESTDIR}/TMPROOT/etc/init.d/ssh
 cp /tmp/tmpnodefiles/motd ${DESTDIR}/TMPROOT/etc/motd
 cp /tmp/tmpnodefiles/motd ${DESTDIR}/TMPROOT/etc/motd.tail
 
-# Links
-#cd ${DESTDIR}/TMPROOT/etc/rcS.d && ln -s ../init.d/ssh S15ssh && cd -
-#cd ${DESTDIR}/TMPROOT/etc/rc3.d && ln -s ../init.d/ssh S15ssh && cd -
-#cd ${DESTDIR}/TMPROOT/etc/rc4.d && ln -s ../init.d/ssh S15ssh && cd -
-#cd ${DESTDIR}/TMPROOT/etc/rc5.d && ln -s ../init.d/ssh S15ssh && cd -
-#cd ${DESTDIR}/TMPROOT/etc/rc0.d && ln -s ../init.d/ssh K15ssh && cd -
-
 echo " feito !"

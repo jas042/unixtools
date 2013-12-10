@@ -1,5 +1,5 @@
 [General]
-#arch=i686
+arch=amd64
 #directory=/tmp/multistrap/
 cleanup=true
 noauth=false
@@ -9,8 +9,8 @@ debootstrap=Debian
 aptsources=Debian
 
 [Debian]
-packages= iputils-ping vim isc-dhcp-client ifupdown linux-base linux-image-3.2.0-4-686-pae kmod net-tools bash libpam-ldap nfs-common openssh-server
-source=http://sft.if.usp.br/debian
+packages= iputils-ping vim isc-dhcp-client ifupdown linux-base linux-image-3.2.0-4-amd6 kmod net-tools bash libpam-ldap nfs-common openssh-server
+source=http://debian.if.ufrgs.br/debian
 keyring=debian-archive-keyring
 suite=wheezy
-omitdebsrc=false
+omitdebsrc=true
