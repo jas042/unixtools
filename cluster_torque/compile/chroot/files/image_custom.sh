@@ -16,4 +16,8 @@ cp /tmp/tmpnodefiles/ssh_init ${DESTDIR}/TMPROOT/etc/init.d/ssh
 cp /tmp/tmpnodefiles/motd ${DESTDIR}/TMPROOT/etc/motd
 cp /tmp/tmpnodefiles/motd ${DESTDIR}/TMPROOT/etc/motd.tail
 
+rm -rf ${DESTDIR}/TMPROOT/boot
+rm -rf ${DESTDIR}/TMPROOT/initrd.img
+rm -rf ${DESTDIR}/TMPROOT/vmlinuz
+
 echo " feito !"

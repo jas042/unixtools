@@ -79,7 +79,9 @@ for x in $(cat /proc/cmdline); do
 	case $x in
 	hostname=*)
 		HOSTNAME=${x#hostname=}
+                echo -n "Configurando hostname: $HOSTNAME ..."
                 echo "$HOSTNAME" > /root/etc/hostname
+                echo " feito !"
 		;;
 	init=*)
 		init=${x#init=}

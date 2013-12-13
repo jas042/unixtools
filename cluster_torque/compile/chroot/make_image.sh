@@ -9,7 +9,7 @@ TMPDIR="/tmp/build_image"
 cp -r files /tmp/tmpnodefiles
 
 keep="n"
-CONFDIR="/etc/initramfs-tools"
+CONFDIR="initramfs-tools"
 verbose="n"
 test -e /bin/busybox && BUSYBOXDIR=/bin
 test -e /usr/lib/initramfs-tools/bin/busybox && BUSYBOXDIR=/usr/lib/initramfs-tools/bin
@@ -250,7 +250,7 @@ cp -p /tmp/tmpnodefiles/init_script ${DESTDIR}/init
 #######
 # Multistrap
 if [ -e /usr/sbin/multistrap ];then
-/usr/sbin/multistrap --tidy-up -d ${DESTDIR}/TMPROOT -f /tmp/tmpnodefiles/node.multistrap
+/usr/sbin/multistrap -d ${DESTDIR}/TMPROOT -f /tmp/tmpnodefiles/node.multistrap
 sh /tmp/tmpnodefiles/image_custom.sh
 cd ${DESTDIR}/TMPROOT && tar zcvf ../chroot.tgz * > /dev/null 2> /dev/null && cd -
 rm -rf /tmp/tmpnodefiles
@@ -393,5 +393,7 @@ else
 	rm -rf "${DESTDIR}"
 	rm -rf "${__TMPCPIOGZ}"
 fi
+
+ls -lah $outfile
 
 exit 0

@@ -14,7 +14,7 @@ iface eth0 inet dhcp
 ### Rede MPI
 auto eth1
 iface eth1 inet static
-	address 192.168.1.254
+	address 10.2.0.254
 	netmask 255.255.255.0
 	broadcast 192.168.1.255
         mtu 7200
@@ -30,8 +30,7 @@ iface eth2 inet static
 
 
 3 - apt-get update 
-4 - apt-get install puppet
-5 - apt-get install git
+4 - apt-get install puppet git
 6 - cd /etc/puppet
 7 - git clone
 8 - cd /etc/puppet/manifests && puppet apply cluster.pp
