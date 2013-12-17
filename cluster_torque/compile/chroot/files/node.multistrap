@@ -9,7 +9,7 @@ aptsources=Debian
 #omitrequired=true
 
 [Debian]
-packages=linux-image-3.2.0-4-amd64 linux-base findutils coreutils grep sed iputils-ping vim isc-dhcp-client ifupdown net-tools bash libpam-ldap nfs-common openssh-server
+packages=libnss-ldap torque-mom ganglia-modules-linux ganglia-monitor linux-image-3.2.0-4-amd64 linux-base findutils coreutils grep sed iputils-ping vim isc-dhcp-client ifupdown net-tools bash libpam-ldap nfs-common openssh-server
 source=http://debian.if.ufrgs.br/debian
 keyring=debian-archive-keyring
 suite=wheezy

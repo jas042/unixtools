@@ -35,4 +35,7 @@ class extra_package {
      ensure => installed,
    }
 #ifort e icc
+   package { 'nginx': 
+     ensure => installed,
+   }
 }

@@ -11,4 +11,5 @@
 #
 # By default this script does nothing.
 /etc/init.d/ssh start
+while [ ! -e /var/run/gmond.pid ]; do /etc/init.d/ganglia-monitor start;done
 exit 0
