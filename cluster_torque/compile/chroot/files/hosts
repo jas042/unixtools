@@ -2,7 +2,7 @@
 
 127.0.0.1	localhost.localdomain	localhost
 10.2.0.254      ada2-mpi ada2-mpi
-10.1.0.254      ada2 ada2
+10.1.0.254      ada ada
 
 #RACK 2 
 10.2.0.201	node201 node201

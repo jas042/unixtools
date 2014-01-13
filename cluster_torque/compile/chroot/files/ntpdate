@@ -1,0 +1,6 @@
+# List of NTP servers to use  (Separate multiple servers with spaces.)
+# Not used if NTPDATE_USE_NTP_CONF is yes.
+NTPSERVERS="10.1.0.254"
+
+# Additional options to pass to ntpdate
+NTPOPTIONS=""

@@ -12,7 +12,10 @@
 ### END INIT INFO
 
 PATH=/usr/sbin:/usr/bin:/sbin:/bin
-DAEMON=/usr/sbin/pbs_mom
+DAEMON=/usr/local/sbin/pbs_mom
+HOST=`hostname`
+DAEMON_OPTS="-H $HOST"
+#DAEMON_OPTS="-c /etc/torque.conf -H $HOST -D -L /var/log/pbs_mom.log"
 NAME=torque-mom
 DESC="Torque Mom"
 PIDFILE=/var/spool/torque/mom_priv/mom.lock
@@ -29,14 +32,11 @@ fi
 
 case "$1" in
   start)
-#	HOST=$(hostname)
-#	[ ! -e /var/spool/torque ] && ln -s /spool/$HOST /var/spool/torque 
-	while [ ! -e $PIDFILE ];do
-		log_daemon_msg "Starting $DESC" "$NAME"
-		start-stop-daemon --start --quiet --pidfile $PIDFILE \
-			--exec $DAEMON -- $DAEMON_OPTS
-		log_end_msg $?
-#	done
+        while [ ! -d /spool/cluster_ada_spool ];do sleep 5;done
+	log_daemon_msg "Starting $DESC" "$NAME"
+	start-stop-daemon --start --quiet --pidfile $PIDFILE \
+		--exec $DAEMON -- $DAEMON_OPTS
+	log_end_msg $?
 	;;
   stop)
 	log_daemon_msg "Stopping $DESC" "$NAME"

@@ -250,6 +250,8 @@ cp -p /tmp/tmpnodefiles/init_script ${DESTDIR}/init
 #######
 # Multistrap
 if [ -e /usr/sbin/multistrap ];then
+export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
+export LC_ALL=C LANGUAGE=C LANG=C
 /usr/sbin/multistrap -d ${DESTDIR}/TMPROOT -f /tmp/tmpnodefiles/node.multistrap
 sh /tmp/tmpnodefiles/image_custom.sh
 cd ${DESTDIR}/TMPROOT && tar zcvf ../chroot.tgz * > /dev/null 2> /dev/null && cd -
@@ -390,6 +392,8 @@ fi
 if [ "${keep}" = "y" ]; then
 	echo "Working files in ${DESTDIR} and overlay in ${__TMPCPIOGZ}"
 else
+#	rm -rf /tmp/tmpnodefiles
+#	rm -rf ${DESTDIR}/TMPROOT
 	rm -rf "${DESTDIR}"
 	rm -rf "${__TMPCPIOGZ}"
 fi

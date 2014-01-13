@@ -38,4 +38,7 @@ class extra_package {
    package { 'nginx': 
      ensure => installed,
    }
+   package { 'nvidia-cuda-toolkit': 
+     ensure => installed,
+   }
 }
