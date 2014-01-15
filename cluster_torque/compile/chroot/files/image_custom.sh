@@ -23,6 +23,10 @@ cp /tmp/tmpnodefiles/gmond.conf ${DESTDIR}/TMPROOT/etc/ganglia/
 cp /tmp/tmpnodefiles/torque.conf ${DESTDIR}/TMPROOT/var/spool/torque/mom_priv/config
 cp /tmp/tmpnodefiles/torque-mom ${DESTDIR}/TMPROOT/etc/init.d/pbs_mom
 cp /tmp/tmpnodefiles/snd.conf ${DESTDIR}/TMPROOT/etc/modprobe.d/
+cp /tmp/tmpnodefiles/nouveau.conf ${DESTDIR}/TMPROOT/etc/modprobe.d/
+
+#Nvidia
+cp /tmp/tmpnodefiles/nvidia_libs.tar.gz ${DESTDIR}/TMPROOT/
 
 #NFS
 cp /tmp/tmpnodefiles/idmapd.conf ${DESTDIR}/TMPROOT/etc/
@@ -38,6 +42,7 @@ cp /tmp/tmpnodefiles/nsswitch.conf ${DESTDIR}/TMPROOT/etc/
 cp /tmp/tmpnodefiles/pam_ldap.conf ${DESTDIR}/TMPROOT/etc/
 cp /tmp/tmpnodefiles/libnss-ldap.conf ${DESTDIR}/TMPROOT/etc/
 cp /tmp/tmpnodefiles/nsswitch.conf ${DESTDIR}/TMPROOT/etc/
+cp /tmp/tmpnodefiles/nvidia*.ko ${DESTDIR}/TMPROOT/lib/modules/3.2.0-4-amd64/kernel/drivers/video/
 
 rm -rf ${DESTDIR}/TMPROOT/boot
 rm -rf ${DESTDIR}/TMPROOT/initrd.img
@@ -45,9 +50,12 @@ rm -rf ${DESTDIR}/TMPROOT/vmlinuz
 rm -rf ${DESTDIR}/TMPROOT/var/spool/torque/server_name
 rm -rf ${DESTDIR}/TMPROOT/var/spool/torque/spool
 
+/usr/sbin/chroot ${DESTDIR}/TMPROOT/ depmod -a
 /usr/sbin/chroot ${DESTDIR}/TMPROOT/ /usr/sbin/update-rc.d pbs_mom defaults
 /usr/sbin/chroot ${DESTDIR}/TMPROOT/ /usr/sbin/update-rc.d ganglia-monitor defaults
 /usr/sbin/chroot ${DESTDIR}/TMPROOT/ /usr/sbin/update-rc.d ssh defaults
 /usr/sbin/chroot ${DESTDIR}/TMPROOT/ ln -sf /spool/cluster_ada_spool /var/spool/torque/spool && chmod o+t /var/spool/torque/spool
+/usr/sbin/chroot ${DESTDIR}/TMPROOT/ tar zxf nvidia_libs.tar.gz
+/usr/sbin/chroot ${DESTDIR}/TMPROOT/ rm nvidia_libs.tar.gz
 
 echo " feito !"

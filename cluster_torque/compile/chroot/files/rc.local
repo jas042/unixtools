@@ -10,6 +10,7 @@
 # bits.
 #
 # By default this script does nothing.
-depmod -a
+modprobe nvidia
+modprobe nvidia-uvm
 [ -e /var/run/gmond.pid ] && /etc/init.d/ganglia-monitor restart
 exit 0
