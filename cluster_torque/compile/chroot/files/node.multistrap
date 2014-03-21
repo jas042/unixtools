@@ -17,7 +17,7 @@ suite=stable
 omitdebsrc=true
 
 [ClusterIF]
-packages=torque-if-client
+packages=torque-if-client_gpu
 source=http://debian.if.ufrgs.br/cluster
 suite=ClusterIF
 omitdebsrc=true

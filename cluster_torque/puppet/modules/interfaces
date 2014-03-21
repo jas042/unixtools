@@ -1,0 +1,27 @@
+# The loopback network interface
+auto lo 
+iface lo inet loopback
+
+### Externo
+auto eth0
+iface eth0 inet static
+      address 143.54.196.58
+      netmask 255.255.252.0
+      gateway 143.54.196.1
+      broadcast 143.54.199.255 
+
+### Rede MPI
+auto eth1
+iface eth1 inet static
+	address 10.2.0.254
+	netmask 255.255.255.0
+	broadcast 10.2.0.255
+        mtu 7200
+
+### Rede NFS
+auto eth2
+iface eth2 inet static
+	address 10.1.0.254
+	netmask 255.255.255.0
+	broadcast 10.1.0.255
+        mtu 7200

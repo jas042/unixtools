@@ -26,7 +26,7 @@ cp /tmp/tmpnodefiles/snd.conf ${DESTDIR}/TMPROOT/etc/modprobe.d/
 cp /tmp/tmpnodefiles/nouveau.conf ${DESTDIR}/TMPROOT/etc/modprobe.d/
 
 #Nvidia
-cp /tmp/tmpnodefiles/nvidia_libs.tar.gz ${DESTDIR}/TMPROOT/
+cp /tmp/tmpnodefiles/nvidia_libs_inc.tar.gz ${DESTDIR}/TMPROOT/
 
 #NFS
 cp /tmp/tmpnodefiles/idmapd.conf ${DESTDIR}/TMPROOT/etc/

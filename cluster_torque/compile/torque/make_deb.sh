@@ -4,7 +4,7 @@
 # Vars
 #
 SRC="/root/tmp/torque-4.2.6"
-VERSION="4.2.6"
+VERSION="4.2.6-1"
 TMPBUILD="/tmp/build_torque"
 CONFIGURE_FLAGS="--with-server-home=/var/spool/torque --with-pam=yes --enable-nvidia-gpus"
 
