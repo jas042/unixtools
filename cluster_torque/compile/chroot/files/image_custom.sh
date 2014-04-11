@@ -55,7 +55,7 @@ rm -rf ${DESTDIR}/TMPROOT/var/spool/torque/spool
 /usr/sbin/chroot ${DESTDIR}/TMPROOT/ /usr/sbin/update-rc.d ganglia-monitor defaults
 /usr/sbin/chroot ${DESTDIR}/TMPROOT/ /usr/sbin/update-rc.d ssh defaults
 /usr/sbin/chroot ${DESTDIR}/TMPROOT/ ln -sf /spool/cluster_ada_spool /var/spool/torque/spool && chmod o+t /var/spool/torque/spool
-/usr/sbin/chroot ${DESTDIR}/TMPROOT/ tar zxf nvidia_libs.tar.gz
-/usr/sbin/chroot ${DESTDIR}/TMPROOT/ rm nvidia_libs.tar.gz
+/usr/sbin/chroot ${DESTDIR}/TMPROOT/ tar zxfv nvidia_libs_inc.tar.gz
+/usr/sbin/chroot ${DESTDIR}/TMPROOT/ rm nvidia_libs_inc.tar.gz
 
 echo " feito !"
